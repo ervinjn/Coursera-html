@@ -1,0 +1,93 @@
+body {
+  font-size: 16px;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #86b231;
+
+}
+
+/************** Navigation Bar **/
+
+#navigation-area {
+	background-color: #fff980;
+	border-radius: 0;
+	border: 0;
+	margin: 0;
+}
+
+nav > div {
+	margin: 0;
+}
+
+.navbar-brand {  
+	padding-top: 5px;
+	text-align: center;
+
+ }
+
+.navbar-brand h1{  /* company name */
+	font-style: italic;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0;
+	color: black;
+	font-weight: 700;
+}
+
+#collapsable-nav {  /*  styling the collasable navigation menu */
+	border: 0;
+	padding: 0;
+}
+
+
+#nav-list {   /* styling the list of items in the dropdown menu  */
+	text-align: center;
+	font-size: 1.5em;
+	background-color: #ffcc1d;
+	width: 100%;
+	margin: 0;
+}
+
+ul > li {
+	border: 1px solid black;
+}
+
+
+/*********************** Main Content **************************/
+
+h3 {
+	font-weight: 600;
+}
+
+#main-content {
+	background-color: #b0ff6e;
+	margin-right: 3%;
+	margin-left: 3%;
+	margin-bottom: 5%;
+	border-radius: 10px;
+}
+
+
+h4 {
+	margin-top: 5%;
+	margin-bottom: 2.5%;
+}
+
+#info {
+	text-align: justify;
+	font-size: 1.25em;
+	padding: 2%;
+	margin: 0;
+}
+
+img {
+border: 2px solid black;
+margin-top: 5px;
+}
+
+.images {
+	padding: 2.5%;
+}
+
+
+

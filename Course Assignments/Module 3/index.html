@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">   
+	<title>Module 3 Solution </title>
+
+	<!-- Style Sheets -->
+<!--	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  -->
+	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet"  href="CSS/styles.css" > 
+
+	<!-- Importing font "Oxygen" from Google Fonts.  see URL https://fonts.google.com/ (see also Lecture 29)  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<script src = "js/jquery-2.1.4.min.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
+
+
+	<header>   
+		  <nav id="navigation-area" class="navbar navbar-default" >
+		  	  <div class="container .m0">  <!-- using bootstrap container class to align page content -->
+		  	  						<!-- 
+									I've got some strange behavior going in some of the larger screen size ranges with the centering of
+									text and the magrins. According to the documentation, containers don't always center the content.
+
+		  	  						I'm struggling with the margins on this container.  I tried to use bootstrap's .m0 class
+		  	  						to set the margins to 0 (see this page: https://getbootstrap.com/docs/4.0/utilities/spacing/) Despite this, when I inspect with Chrome developer tools, I see
+		  	  						that they are not zero.  In mobile view, the margins collapse.  But in medium and large views
+		  	  						they have non-zero values, ranging from 4 to over 100.  What the heck?! 
+
+									
+		  	  						  -->
+		    	<div class="navbar-header">
+		  	    	<div class="navbar-brand pull-left"> 
+		  	    		<h1>  Stag Beetles </h1>
+		  	    	</div>
+
+		  	    	<button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+           		 		<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+
+          			
+		  	  	</div> <!-- end navbar-header -->
+
+
+				<div id="collapsable-nav" class="collapse navbar-collapse"> 
+          			<ul id="nav-list" class="nav navbar-nav navbar-right hidden-lg hidden-md hidden-sm">
+          				<li> Ecology </li>
+          				<li> Anatomy </li>
+          				<li> Physiology </li>
+          			</ul>
+          		</div> <!-- .collapse, navbar-collapse -->
+		  	  </div> <!-- end navbar container -->
+		  </nav>
+	</header>
+
+	<h3 class="text-center"> Stag Beetle Biology </h3>  <!-- using a bootstrap class to center the main page heading -->
+  	<div id="main-content" class="container">  
+ 			<div class="row">  
+  				<section class="col-lg-12 col-md-12 col-sm12 col-xs12" id="info-box"> 
+  					<h4 class="text-center"> Ecology</h4>
+  					<div id="info">
+  						Common east of the Mississippi, Stag Beetles are noted for their large size and ferocious appearance. A durable exoskeleton and imposing, pincer-like mandibles on males imply aggression, but this is not an accurate reflection of the beetle. The mandibles on the male are generally reserved for male-to-male combat when it comes time to woo a female Stag Beetle. The winning male gets the opportunity to mate. Among males, younger males have shorter mandibles than older ones. The mandibles on the female are much shorter than that of the male, which can be as large as their heads. Its exoskeleton appears smooth and glossy and has a rich dark red or brown hue to it. This species is different from other Stag Beetles thanks in part to the orange or yellow coloring at the base of each leg.
+
+						They are primarily night dwellers and - like most nocturnal insects - are generally attracted to light sources at night. Despite the large mouth parts, the Stag Beetle lives on a steady diet of sap. Females lay fertilized eggs on dead trees or stumps. The grubs hatch and mature in the rotting wood.©InsectIdentification.org
+					</div>
+  				</section>
+  			</div>
+  		
+  			<div class="row images"> 
+  				<img src="images/beetle.jpg" class="img-responsive">
+  			</div>
+
+  			<div class="row images"> 
+  				<img src="images/larvae.jpg" class="img-responsive">
+  			</div>
+	 </div> <!-- end main content container -->
+
+</body>
+
+
+</html>
+
