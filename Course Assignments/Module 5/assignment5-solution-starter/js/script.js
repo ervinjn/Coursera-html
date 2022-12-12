@@ -111,13 +111,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // *** start ***
 // On first load, show home view
 showLoading("#main-content");
+  console.log("sending get request to firebase");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,        // this is the URL for the data, hosted on firebase
   buildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
-  console.log("exiting ajax all to firebase");
+  console.log("exiting ajax call to firebase");
 
 
 
@@ -126,8 +127,9 @@ $ajaxUtils.sendGetRequest(
 function buildAndShowHomeHTML (categories) {    // at this point, we have received all of the data from firebase in the form of an
                                                 // array of objects. That array has been stored in the variable 'categories'.  
   console.log("inside build and show");
-  console.log(categories.length);
+  console.log("array category has" + categories.length + "ojects");
   // Load home snippet page.
+  console.log("sending ajax request for home snippet");
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,                // This is the url for the home snippet.
     function (homeHtml) {       // note: this does not actually call the function.  That is done by ajax-utils
@@ -136,6 +138,7 @@ function buildAndShowHomeHTML (categories) {    // at this point, we have receiv
                                 // to process the data returned by the server (i.e. by firebase).  Therefore, you won't
                                 // find 'homeHTML' defined anywhere.
       console.log("inside handler function for main home page")
+      console.log(typeof(homeHtml);
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
