@@ -34,6 +34,17 @@ var menuItemHtml = "snippets/menu-item.html";
 // --------------------------------------------------------------
 // Defining a bunch of functions that we will need
 
+  // Given array of category objects, returns a random category object.
+var chooseRandomCategory = function (categories) {
+  console.log("inside random category selector function");
+  // Choose a random index into the array (from 0 inclusively until array length (exclusively))
+  var randomArrayIndex = Math.floor(Math.random() * categories.length);
+
+  // return category object with that randomArrayIndex
+  return categories[randomArrayIndex];
+}
+  
+ 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
@@ -151,15 +162,7 @@ function buildAndShowHomeHTML (categories) {    // at this point, we have receiv
 }
 
 
-// Given array of category objects, returns a random category object.
-var chooseRandomCategory = function (categories) {
-  console.log("inside random category selector function");
-  // Choose a random index into the array (from 0 inclusively until array length (exclusively))
-  var randomArrayIndex = Math.floor(Math.random() * categories.length);
 
-  // return category object with that randomArrayIndex
-  return categories[randomArrayIndex];
-}
 
 
 // Load the menu categories view
