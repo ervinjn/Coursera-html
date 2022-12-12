@@ -116,7 +116,7 @@ $ajaxUtils.sendGetRequest(
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
-//  console.log("made it this far")  this printed.  so worked to here.
+  console.log("exiting ajax all to firebase");
 
 
 
