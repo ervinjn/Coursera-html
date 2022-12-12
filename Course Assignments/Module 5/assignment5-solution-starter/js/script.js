@@ -112,7 +112,7 @@ $ajaxUtils.sendGetRequest(
 // returned from the server.
 function buildAndShowHomeHTML (categories) {    // at this point, we have received all of the data from firebase in the form of an
                                                 // array of objects. That array has been stored in the variable 'categories'.  
-  console.log(typeof(categories);
+  console.log(typeof(categories));
   // Load home snippet page.
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,                // This is the url for the home snippet.
