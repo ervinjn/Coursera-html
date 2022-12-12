@@ -40,7 +40,7 @@ var chooseRandomCategory = function (categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
   var randomArrayIndex = Math.floor(Math.random() * categories.length);
   console.log("randomly chosen index is " +  randomArrayIndex);
-  console.log("randomly chosen category is " + categories[randomArrayIndex]);
+  console.log("randomly chosen category is " + categories[randomArrayIndex].short_name);
 
   // return category object with that randomArrayIndex
   return categories[randomArrayIndex];
