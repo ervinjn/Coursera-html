@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // *** start ***
 // On first load, show home view
 showLoading("#main-content");
-  console.log("sending get request to firebase");
+  console.log("sending ajax request to firebase");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,        // this is the URL for the data, hosted on firebase
   buildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
@@ -126,7 +126,7 @@ $ajaxUtils.sendGetRequest(
 function buildAndShowHomeHTML (categories) {    // at this point, we have received all of the data from firebase in the form of an
                                                 // array of objects. That array has been stored in the variable 'categories'.  
   console.log("inside build and show");
-  console.log("array category has" + categories.length + "ojects");
+  console.log("array category has " + categories.length + " objects");
   // Load home snippet page.
   console.log("sending ajax request for home snippet");
   $ajaxUtils.sendGetRequest(
@@ -157,6 +157,7 @@ function buildAndShowHomeHTML (categories) {    // at this point, we have receiv
       // it into the home html snippet.
       //
          var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"randomCategoryShortName", 'chosenCategoryShortName.short_name');
+      console.log(homeHtmlToInsertIntoMainPage);
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
