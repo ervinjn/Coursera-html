@@ -137,7 +137,7 @@ function buildAndShowHomeHTML (categories) {    // at this point, we have receiv
                                 // to process the data returned by the server (i.e. by firebase).  Therefore, you won't
                                 // find 'homeHTML' defined anywhere.
       console.log("inside handler function for main home page")
-      console.log(typeof(homeHtml);
+      console.log(typeof(homeHtml));
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
